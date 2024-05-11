@@ -21,7 +21,12 @@ function operate() {
       break;
 
     case "/":
-      result = a / b;
+      if(b != 0){
+        result = a / b;
+      }
+      else{
+        result = "invalid";
+      }
       break;
 
       case "%":
