@@ -1,0 +1,38 @@
+let result;
+
+function operate() {
+  let a = Number(document.querySelector(".a").value);
+  let b = Number(document.querySelector(".b").value);
+  let op = document.querySelector(".op").value;
+
+  console.log(op);
+
+  switch (op) {
+    case "+":
+      result = a + b;
+      break;
+
+    case "-":
+      result = a - b;
+      break;
+
+    case "*":
+      result = a * b;
+      break;
+
+    case "/":
+      result = a / b;
+      break;
+
+      case "%":
+      result = a % b;
+      break;
+
+    default:
+      alert("Enter a valid operation !!!!!");
+      break;
+  }
+
+  console.log(result);
+  document.querySelector("#out").innerHTML = result;
+}
